@@ -18,6 +18,8 @@ Cara install cukup mudah, yakni:
 4. kemudian jika sudah, tulis php artisan migrate:fresh --seed untuk memindahkan database yang sudah dibuat.
 5. Lalu, php artisan serve
 
+Oh ya disini saya menggunakan Laravel v11.16.0 dan PHP v8.2.12. Untuk [filament versi 3.2](https://filamentphp.com/docs/3.x/panels/installation)
+
 ## Contributing
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
