@@ -12,6 +12,7 @@ class Hero extends Model
     protected $fillable = [
         'image',
         'title',
+        'walktitle',
         'subtitle',
         'link1',
         'link2',

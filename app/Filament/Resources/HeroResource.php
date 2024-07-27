@@ -33,6 +33,7 @@ class HeroResource extends Resource
                 //add fields for image
                 FileUpload::make('image'),
                 TextInput::make('title')->required()->placeholder('Enter Title'),
+                TextInput::make('walktitle')->required()->placeholder('Enter Walk Title'),
                 TextInput::make('subtitle')->required()->placeholder('Enter Subtitle'),
                 TextInput::make('link1')->required()->placeholder('Enter Link 1'),
                 TextInput::make('link2')->required()->placeholder('Enter Link 2'),
@@ -49,6 +50,8 @@ class HeroResource extends Resource
                 Tables\Columns\ImageColumn::make('image')
                 ->sortable(),
                 Tables\Columns\TextColumn::make('title')->wrap()
+                ->sortable(),
+                Tables\Columns\TextColumn::make('walktitle')->wrap()
                 ->sortable(),
                 Tables\Columns\TextColumn::make('subtitle')->wrap()
                 ->sortable(),

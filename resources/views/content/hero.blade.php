@@ -10,7 +10,7 @@
             <div class="text-center lg:text-left mt-6 lg:mt-0">
                 <div class="mb-12">
                     <h1 class="text-4xl leading-normal text-black font-bold mb-4">{{$hero->title}} <span data-toggle="typed"
-                            data-options='{"strings": [" Online Marketing", "Web Design", "Mobile Apps", "Brand Identity", "Social Content"]}'></span>
+                            data-options='{"strings": ["{{$hero->walktitle}}"]}'></span>
                     </h1>
                     <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">{{$hero->subtitle}}</p>
                 </div>
