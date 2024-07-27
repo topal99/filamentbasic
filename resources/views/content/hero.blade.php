@@ -12,12 +12,11 @@
                     <h1 class="text-4xl leading-normal text-black font-bold mb-4">{{$hero->title}} <span data-toggle="typed"
                             data-options='{"strings": [" Online Marketing", "Web Design", "Mobile Apps", "Brand Identity", "Social Content"]}'></span>
                     </h1>
-                    <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">We would direct
-                        you to limitless ideas and move your brand into a global landscape.</p>
+                    <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">{{$hero->subtitle}}</p>
                 </div>
                 <a class="py-2.5 px-10 inline-block text-center leading-normal text-gray-900 bg-white border-b border-gray-100 hover:text-black hover:ring-0 focus:outline-none focus:ring-0 mr-4"
                     href="#portfolio">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block mr-1" width="1.5rem" height="1.5rem"
+                    <svg xmlns="{{$hero->link1}}" class="inline-block mr-1" width="1.5rem" height="1.5rem"
                         fill="currentColor" viewBox="0 0 512 512">
                         <path
                             d="M304,384V360c0-29,31.54-56.43,52-76,28.84-27.57,44-64.61,44-108,0-80-63.73-144-144-144A143.6,143.6,0,0,0,112,176c0,41.84,15.81,81.39,44,108,20.35,19.21,52,46.7,52,76v24"
@@ -35,7 +34,7 @@
                 </a>
 
                 <a class="py-2.5 px-10 inline-block text-center leading-normal text-gray-100 bg-black border-b border-gray-800 hover:text-white hover:ring-0 focus:outline-none focus:ring-0"
-                    target="_blank" href="https://aribudin.gumroad.com/l/tailone">
+                    target="_blank" href="{{$hero->link2}}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" class="inline-block mr-1"
                         fill="currentColor" viewBox="0 0 512 512">
                         <rect x="48" y="96" width="416" height="320" rx="40" ry="40"
