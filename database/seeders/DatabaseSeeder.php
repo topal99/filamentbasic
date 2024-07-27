@@ -26,7 +26,8 @@ class DatabaseSeeder extends Seeder
         // call seeder
 
         $this->call([
-            GuestBookSeeder::class
+            GuestBookSeeder::class,
+            HeroSeeder::class,
         ]);
     }
 }
