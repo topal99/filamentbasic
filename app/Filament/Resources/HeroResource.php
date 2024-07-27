@@ -56,7 +56,12 @@ class HeroResource extends Resource
                 ->sortable(),
                 Tables\Columns\TextColumn::make('link2')->wrap()
                 ->sortable(),
-                ToggleColumn::make('is_active'),
+                ToggleColumn::make('is_active')
+                ->beforeStateUpdated(
+                    function (Hero $hero) {
+                        Hero::where('id', '!=', $hero->id)->update(['is_active' => 0]);
+                    }
+                ),
             ])
             ->filters([
 

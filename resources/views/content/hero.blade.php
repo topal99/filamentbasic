@@ -2,16 +2,15 @@
     <div class="flex flex-wrap flex-row -mx-4 justify-center">
         <!-- content -->
         <div class="flex-shrink max-w-full px-4 sm:px-12 lg:px-18 w-full sm:w-9/12 lg:w-1/2 self-center">
-            <img src="src/img/dummy/hero.svg" class="w-full max-w-full h-auto" alt="creative agency">
+            <img src="{{ Storage::url($hero->image)}}" class="w-full max-w-full h-auto" alt="creative agency">
         </div><!-- end content -->
 
         <!-- text -->
         <div class="flex-shrink max-w-full px-4 w-full md:w-9/12 lg:w-1/2 self-center lg:pr-12">
             <div class="text-center lg:text-left mt-6 lg:mt-0">
                 <div class="mb-12">
-                    <h1 class="text-4xl leading-normal text-black font-bold mb-4">We are a Digital
-                        Agency<br>serve <span data-toggle="typed"
-                            data-options='{"strings": ["Online Marketing", "Web Design", "Mobile Apps", "Brand Identity", "Social Content"]}'></span>
+                    <h1 class="text-4xl leading-normal text-black font-bold mb-4">{{$hero->title}} <span data-toggle="typed"
+                            data-options='{"strings": [" Online Marketing", "Web Design", "Mobile Apps", "Brand Identity", "Social Content"]}'></span>
                     </h1>
                     <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">We would direct
                         you to limitless ideas and move your brand into a global landscape.</p>
