@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use AnourValar\EloquentSerialize\Service;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -28,6 +29,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             GuestBookSeeder::class,
             HeroSeeder::class,
+            ServicesSeeder::class,
         ]);
     }
 }

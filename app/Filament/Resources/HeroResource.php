@@ -51,13 +51,7 @@ class HeroResource extends Resource
                 ->sortable(),
                 Tables\Columns\TextColumn::make('title')->wrap()
                 ->sortable(),
-                Tables\Columns\TextColumn::make('walktitle')->wrap()
-                ->sortable(),
                 Tables\Columns\TextColumn::make('subtitle')->wrap()
-                ->sortable(),
-                Tables\Columns\TextColumn::make('link1')->wrap()
-                ->sortable(),
-                Tables\Columns\TextColumn::make('link2')->wrap()
                 ->sortable(),
                 ToggleColumn::make('is_active')
                 ->beforeStateUpdated(

@@ -1,7 +1,9 @@
 <div class="container xl:max-w-6xl mx-auto px-4">
     <!-- Heading start -->
     <header class="text-center mx-auto mb-12 lg:px-20">
-        <h2 class="text-2xl leading-normal mb-2 font-bold text-black">What We Do</h2>
+        <h2 class="text-2xl leading-normal mb-2 font-bold text-black">
+        {{$services->titleservice}}
+        </h2>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 100 60" style="margin: 0 auto;height: 35px;" xml:space="preserve">
             <circle cx="50.1" cy="30.4" r="5" class="stroke-primary"
@@ -11,8 +13,7 @@
             <line x1="45.1" y1="30.4" x2="0" y2="30.4" class="stroke-primary"
                 style="stroke-width: 2;stroke-miterlimit: 10;"></line>
         </svg>
-        <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">Save time managing
-            advertising & Content for your business.</p>
+        <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">{{$services->subtitleservice}}</p>
     </header><!-- End heading -->
 
     <!-- row -->
@@ -29,9 +30,8 @@
                             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                     </svg>
                 </div>
-                <h3 class="text-lg leading-normal mb-2 font-semibold text-black">SEO Services</h3>
-                <p class="text-gray-500">This is a wider card with supporting text below as a natural
-                    content.</p>
+                <h3 class="text-lg leading-normal mb-2 font-semibold text-black">{{$services->titleservice1}}</h3>
+                <p class="text-gray-500">{{$services->subtitleservice1}}</p>
             </div> <!-- end service block -->
         </div>
 
@@ -51,9 +51,8 @@
                     </svg>
 
                 </div>
-                <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Social Content</h3>
-                <p class="text-gray-500">This is a wider card with supporting text below as a natural
-                    content.</p>
+                <h3 class="text-lg leading-normal mb-2 font-semibold text-black">{{$services->titleservice2}}</h3>
+                <p class="text-gray-500">{{$services->subtitleservice2}}</p>
             </div><!-- end service block -->
         </div>
 
@@ -72,9 +71,8 @@
                             d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z" />
                     </svg>
                 </div>
-                <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Creative ads</h3>
-                <p class="text-gray-500">This is a wider card with supporting text below as a natural
-                    content.</p>
+                <h3 class="text-lg leading-normal mb-2 font-semibold text-black">{{$services->titleservice3}}</h3>
+                <p class="text-gray-500">{{$services->subtitleservice3}}</p>
             </div><!-- end service block -->
         </div>
 
@@ -92,9 +90,8 @@
                             d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z" />
                     </svg>
                 </div>
-                <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Brand Identity</h3>
-                <p class="text-gray-500">This is a wider card with supporting text below as a natural
-                    content.</p>
+                <h3 class="text-lg leading-normal mb-2 font-semibold text-black">{{$services->titleservice6}}</h3>
+                <p class="text-gray-500">{{$services->subtitleservice6}}</p>
             </div><!-- end service block -->
         </div>
 
@@ -111,9 +108,8 @@
                             d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
                     </svg>
                 </div>
-                <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Budget & Marketing</h3>
-                <p class="text-gray-500">This is a wider card with supporting text below as a natural
-                    content.</p>
+                <h3 class="text-lg leading-normal mb-2 font-semibold text-black">{{$services->titleservice5}}</h3>
+                <p class="text-gray-500">{{$services->subtitleservice5}}</p>
             </div><!-- end service block -->
         </div>
 
@@ -130,9 +126,8 @@
                             d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z" />
                     </svg>
                 </div>
-                <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Optimize conversions</h3>
-                <p class="text-gray-500">This is a wider card with supporting text below as a natural
-                    content.</p>
+                <h3 class="text-lg leading-normal mb-2 font-semibold text-black">{{$services->titleservice4}}</h3>
+                <p class="text-gray-500">{{$services->subtitleservice4}}</p>
             </div><!-- end service block -->
         </div>
     </div><!-- end row -->
