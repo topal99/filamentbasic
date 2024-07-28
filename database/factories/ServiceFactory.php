@@ -17,22 +17,19 @@ class ServiceFactory extends Factory
     public function definition(): array
     {
         $icons =[
-            //add path from public img dummy folder
-            'icon1.svg',
-            'icon2.svg',
-            'icon3.svg',
-            'icon4.svg',
-            'icon5.svg',
-            'icon6.svg',
+            'dummy/icon1.svg',
+            'dummy/icon2.svg',
+            'dummy/icon3.svg',
+            'dummy/icon4.svg',
+            'dummy/icon5.svg',
+            'dummy/icon6.svg',
         ];
 
         return [
             //add columns for icon, title, description
-            'icon' =>$icons[array_rand($icons)],
-            'title' => $this->faker->sentence(),
+            'icon' => $this->faker->unique()->randomElement($icons),
+            'title' => $this->faker->sentence(1),
             'description' => $this->faker->sentence(),
         ];
     }
-
-    //get unique random icon from icons array
 }
