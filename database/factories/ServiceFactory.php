@@ -28,9 +28,11 @@ class ServiceFactory extends Factory
 
         return [
             //add columns for icon, title, description
-            'icon' => $icons[array_rand($icons)],
+            'icon' =>$icons[array_rand($icons)],
             'title' => $this->faker->sentence(),
             'description' => $this->faker->sentence(),
         ];
     }
+
+    //get unique random icon from icons array
 }

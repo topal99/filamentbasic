@@ -50,6 +50,7 @@ class ServiceResource extends Resource
                 ->sortable()
                 ->searchable(),
             ])
+            ->reorderable('sort')
             ->filters([
                 //
             ])
