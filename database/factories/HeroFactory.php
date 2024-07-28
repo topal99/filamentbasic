@@ -17,7 +17,7 @@ class HeroFactory extends Factory
     public function definition(): array
     {
         return [
-            'image' => $this->faker->imageUrl(),
+            'image' => 'hero.svg',
             'title' => $this->faker->sentence(),
             'walktitle' => $this->faker->sentence(),
             'subtitle' => $this->faker->sentence(),
