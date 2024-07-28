@@ -50,9 +50,11 @@ class HeroResource extends Resource
                 Tables\Columns\ImageColumn::make('image')
                 ->sortable(),
                 Tables\Columns\TextColumn::make('title')->wrap()
-                ->sortable(),
+                ->sortable()
+                ->searchable(),
                 Tables\Columns\TextColumn::make('subtitle')->wrap()
-                ->sortable(),
+                ->sortable()
+                ->searchable(),
                 ToggleColumn::make('is_active')
                 ->beforeStateUpdated(
                     function (Hero $hero) {

@@ -11,7 +11,8 @@ class LandingPageController extends Controller
     {
         //get one hero that is active
         $hero = \App\Models\Hero::where('is_active', true)->first();
-
-        return view('welcome', compact('hero',));
+        //get all services
+        $services = \App\Models\Service::all();
+        return view('welcome', compact('hero', 'services'));
     }
 }
